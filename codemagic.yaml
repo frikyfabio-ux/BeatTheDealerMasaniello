@@ -3,7 +3,7 @@ workflows:
     name: Build APK Masaniello
     max_build_duration: 60
     scripts:
-      - gradle clean
-      - gradle assembleRelease
+      - ./gradlew clean
+      - ./gradlew assembleRelease
     artifacts:
-      - app/build/outputs/apk/release/app-release.apk
+      - app/build/outputs/apk/release/app-release-unsigned.apk
