@@ -3,8 +3,8 @@ workflows:
     name: Build APK Masaniello
     max_build_duration: 60
     scripts:
-      - chmod +x ./gradlew   # ➤ rende gradlew eseguibile
+      - chmod +x ./gradlew        # rende gradlew eseguibile
       - ./gradlew clean
       - ./gradlew assembleRelease
     artifacts:
-      - app/build/outputs/apk/release/app-release-unsigned.apk
+      - app/build/outputs/apk/release/*.apk   # prende qualsiasi APK nella cartella release
