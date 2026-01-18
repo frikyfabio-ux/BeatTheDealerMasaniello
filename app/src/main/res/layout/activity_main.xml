@@ -1,0 +1,23 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#121212"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText android:id="@+id/etCapitale" android:hint="Capitale iniziale" />
+    <EditText android:id="@+id/etEventiTotali" android:hint="Eventi totali" />
+    <EditText android:id="@+id/etEventiDaVincere" android:hint="Eventi da vincere" />
+    <EditText android:id="@+id/etQuota" android:hint="Quota evento" />
+
+    <Button android:id="@+id/btnStart" android:text="Avvia ciclo" />
+
+    <TextView android:id="@+id/tvCapitale" />
+    <TextView android:id="@+id/tvStatus" />
+
+    <EditText android:id="@+id/etPuntata" android:enabled="false" />
+
+    <Button android:id="@+id/btnVinta" android:text="Vinta" />
+    <Button android:id="@+id/btnPersa" android:text="Persa" />
+
+</LinearLayout>
