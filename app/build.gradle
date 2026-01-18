@@ -6,7 +6,9 @@ plugins {
 android {
     namespace "com.masaniello.beatthedealer"
     compileSdk 34
-
+buildFeatures {
+    viewBinding true
+}
     defaultConfig {
         applicationId "com.masaniello.beatthedealer"
         minSdk 26
