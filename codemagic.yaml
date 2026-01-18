@@ -1,0 +1,18 @@
+workflows:
+  android-workflow:
+    name: Build APK Masaniello
+    max_build_duration: 60
+    environment:
+      flutter: none
+      vars:
+        PROJECT_DIR: .
+      android:
+        build_tools_version: 34.0.0
+        compile_sdk: 34
+        min_sdk: 26
+        target_sdk: 34
+    scripts:
+      - name: Gradle Build
+        script: ./gradlew assembleRelease
+    artifacts:
+      - app/build/outputs/apk/release/app-release.apk
