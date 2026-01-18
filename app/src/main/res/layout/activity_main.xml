@@ -1,23 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:padding="16dp"
     android:background="#121212"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <EditText android:id="@+id/etCapitale" android:hint="Capitale iniziale" />
-    <EditText android:id="@+id/etEventiTotali" android:hint="Eventi totali" />
-    <EditText android:id="@+id/etEventiDaVincere" android:hint="Eventi da vincere" />
-    <EditText android:id="@+id/etQuota" android:hint="Quota evento" />
+    <EditText
+        android:id="@+id/etCapitale"
+        android:hint="Capitale iniziale"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
-    <Button android:id="@+id/btnStart" android:text="Avvia ciclo" />
+    <EditText
+        android:id="@+id/etEventiTotali"
+        android:hint="Eventi totali"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
-    <TextView android:id="@+id/tvCapitale" />
-    <TextView android:id="@+id/tvStatus" />
+    <EditText
+        android:id="@+id/etEventiDaVincere"
+        android:hint="Eventi da vincere"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
-    <EditText android:id="@+id/etPuntata" android:enabled="false" />
+    <EditText
+        android:id="@+id/etQuota"
+        android:hint="Quota evento"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
-    <Button android:id="@+id/btnVinta" android:text="Vinta" />
-    <Button android:id="@+id/btnPersa" android:text="Persa" />
+    <Button
+        android:id="@+id/btnStart"
+        android:text="Avvia ciclo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvCapitale"
+        android:text="Capitale:"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etPuntata"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnVinta"
+        android:text="Vinta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnPersa"
+        android:text="Persa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
