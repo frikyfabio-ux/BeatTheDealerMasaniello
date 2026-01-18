@@ -4,6 +4,6 @@ workflows:
     max_build_duration: 60
     scripts:
       - name: Gradle Build
-        script: ./gradlew assembleRelease
+        script: gradle assembleRelease
     artifacts:
       - app/build/outputs/apk/release/app-release.apk
