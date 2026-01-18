@@ -6,8 +6,5 @@ workflows:
       - chmod +x ./gradlew
       - ./gradlew clean
       - ./gradlew assembleRelease
-      # Sposta tutti gli APK generati nella cartella `release` con nome standard
-      - mkdir -p app/build/outputs/apk/release/
-      - cp app/build/outputs/apk/release/*-release-unsigned.apk app/build/outputs/apk/release/app-release.apk
     artifacts:
-      - app/build/outputs/apk/release/app-release.apk
+      - app/build/outputs/apk/release/*.apk   # prende tutto ciò che è APK nella cartella release
