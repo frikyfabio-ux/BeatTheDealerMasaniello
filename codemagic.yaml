@@ -8,8 +8,7 @@ workflows:
 
     scripts:
       - chmod +x ./gradlew
-      - ./gradlew clean
       - ./gradlew assembleRelease
 
     artifacts:
-      - app/build/outputs/apk/release/*.apk
+      - app/build/outputs/**/*.apk
